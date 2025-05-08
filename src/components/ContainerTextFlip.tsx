@@ -21,7 +21,7 @@ export function TextFlip() {
         opacity: 1,
       }}
       className={cn(
-        "relative mb-6 text-2xl  sm:text-4xl text-center leading-normal font-semibold tracking-tight text-zinc-700 md:text-5xl lg:text-6xl  dark:text-zinc-100"
+        "relative mb-6 text-2xl  sm:text-4xl text-center leading-normal font-semibold tracking-tight text-zinc-700 md:text-5xl lg:text-6xl  "
       )}
       layout
     >

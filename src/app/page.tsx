@@ -14,7 +14,7 @@ export default function Home() {
         <div className="z-10">{/* <ModeToggle /> */}</div>
       </div>
       {/* Main Content */}
-      <main className="relative  flex-grow text-gray-700 dark:text-white  max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-10 ">
+      <main className="relative  flex-grow text-gray-700   max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-10 ">
         <div className="mb-6">
           <ComingSoon />
         </div>
@@ -24,7 +24,7 @@ export default function Home() {
             <TextFlip />
 
             <p
-              className={` text-lg sm:text-xl text-gray-600 dark:text-gray-100 max-w-3xl mx-auto leading-relaxed`}
+              className={` text-lg sm:text-xl text-gray-600  max-w-3xl mx-auto leading-relaxed`}
             >
               Boost your business with call recording, affordable numbers, DNI,
               real-time analytics, and smart call flows. Call tracking’s future
@@ -42,9 +42,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="z-10  py-8 mx-auto">
         <SocialLinks />
-        <p
-          className={` mt-6 text-sm text-center text-black/50 dark:text-white/50`}
-        >
+        <p className={` mt-6 text-sm text-center text-black/50 `}>
           © {new Date().getFullYear()} CallGauge. All rights reserved.
         </p>
       </footer>
