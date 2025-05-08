@@ -69,6 +69,7 @@ export function Button({
   );
 }
 
+// Add a check to ensure the code referencing SVGRectElement only runs in the browser
 export const MovingBorder = ({
   children,
   duration = 3000,
@@ -82,24 +83,30 @@ export const MovingBorder = ({
   ry?: string;
   [key: string]: unknown;
 }) => {
-  const pathRef = useRef<unknown>(null);
+  const pathRef = useRef<SVGRectElement>(null);
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
-    const length = pathRef.current?.getTotalLength();
-    if (length) {
-      const pxPerMillisecond = length / duration;
-      progress.set((time * pxPerMillisecond) % length);
+    if (typeof window !== "undefined") {
+      // Ensure this code runs only in the browser
+      const pathElement = pathRef.current;
+      if (pathElement instanceof SVGRectElement) {
+        const length = pathElement.getTotalLength();
+        const pxPerMillisecond = length / duration;
+        progress.set((time * pxPerMillisecond) % length);
+      }
     }
   });
 
-  const x = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
+  const x = useTransform(progress, (val) =>
+    typeof window !== "undefined" && pathRef.current instanceof SVGRectElement
+      ? pathRef.current.getPointAtLength(val).x
+      : 0
   );
-  const y = useTransform(
-    progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
+  const y = useTransform(progress, (val) =>
+    typeof window !== "undefined" && pathRef.current instanceof SVGRectElement
+      ? pathRef.current.getPointAtLength(val).y
+      : 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
