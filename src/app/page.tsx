@@ -1,3 +1,4 @@
+import { Card } from "@/components/Card";
 import { ComingSoon } from "@/components/ComingSoon";
 import { TextFlip } from "@/components/ContainerTextFlip";
 import { HeroHighlightDemo } from "@/components/HeroHighlightDemo";
@@ -13,10 +14,7 @@ export default function Home() {
         <div className="z-10">{/* <ModeToggle /> */}</div>
       </div>
       {/* Main Content */}
-      <main className="relative  flex-grow text-gray-700 dark:text-white  max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-24 lg:py-20">
-        {/* <h2 className=" dark:text-gray-100 hover:scale-110 transition-all duration-300 ease-in-out cursor-pointer  text-4xl  border  text-gray-700 rounded-full px-2 py-1 inline-block">
-          Coming Soon
-        </h2> */}
+      <main className="relative  flex-grow text-gray-700 dark:text-white  max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-10 ">
         <div className="mb-6">
           <ComingSoon />
         </div>
@@ -28,10 +26,16 @@ export default function Home() {
             <p
               className={` text-lg sm:text-xl text-gray-600 dark:text-gray-100 max-w-3xl mx-auto leading-relaxed`}
             >
-              Unlock powerful call analytics, seamless integrations, and
-              AI-driven insights to elevate your customer interactions. The
-              future of call tracking is almost here.
+              Boost your business with call recording, affordable numbers, DNI,
+              real-time analytics, and smart call flows. Call tracking’s future
+              is near.
             </p>
+          </div>
+          <div>
+            <h1 className="text-4xl text-gray-700 my-6 font-semibold">
+              Features We Provide
+            </h1>
+            <Card />
           </div>
         </div>
       </main>
