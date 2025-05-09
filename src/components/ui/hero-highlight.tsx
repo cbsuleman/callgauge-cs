@@ -41,7 +41,7 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "group fixed inset-0 flex  w-full items-center justify-center bg-neutral-50 ",
+        "group fixed  inset-0 flex  w-full items-center justify-center bg-neutral-50 ",
         containerClassName
       )}
       onMouseMove={handleMouseMove}
