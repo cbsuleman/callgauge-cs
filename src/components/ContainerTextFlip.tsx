@@ -9,8 +9,8 @@ export function TextFlip() {
     "Higher quality leads",
     "Reduced costs",
     "Increased deal closures",
-    "Your market advantage",
-    "High performing campaigns",
+    "Stronger market position",
+    "Leading campaigns",
   ];
   return (
     <motion.h1
@@ -27,7 +27,7 @@ export function TextFlip() {
     >
       <div className="text-center ">
         <span className="text-transparent  font-semibold  leading-tight tracking-tight  bg-clip-text bg-gradient-to-r from-15% from-cyan-950 to-orange-600/90">
-          Call tracking + AI that transforms calls into{" "}
+          CallGauge empowers you with{" "}
         </span>
         <ContainerTextFlip
           className="text-center font-semibold"

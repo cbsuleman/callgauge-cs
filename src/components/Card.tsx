@@ -13,36 +13,31 @@ export const projects = [
   {
     title: "Call Recording",
     description:
-      "Automatically records calls for quality assurance, training, and compliance, providing insights into customer interactions.",
+      "Seamlessly records all calls for quality control, training, and compliance, offering valuable insights into customer interactions.",
   },
   {
     title: "Affordable Numbers",
     description:
-      "Low-cost tracking numbers enable budget-friendly call attribution for marketing campaigns.",
-    // link: "https://netflix.com",
+      "Cost-effective tracking numbers for accurate call attribution, perfect for budget-conscious marketing campaigns.",
   },
   {
     title: "Dynamic Number Insertion",
     description:
-      "Displays unique phone numbers based on traffic source to track marketing campaign performance.",
-    // link: "https://google.com",
+      "Shows unique phone numbers based on visitor source, enabling precise tracking of marketing campaign effectiveness.",
   },
   {
     title: "Real-Time Analytics",
     description:
-      "Instantly delivers call data on volume, source, and duration for quick, data-driven decisions.",
-    // link: "https://meta.com",
+      "Provides instant call metrics on volume, source, and duration, empowering rapid, data-driven decisions.",
   },
   {
     title: "Advanced Call Flows",
     description:
-      "Customizable routing like IVR and geo-routing ensures callers reach the right team efficiently.",
-    // link: "https://amazon.com",
+      "Tailored call routing with features like IVR and geo-routing to connect callers to the right team efficiently.",
   },
   {
     title: "Call Tracking",
     description:
-      "Monitors and attributes inbound calls to specific marketing channels, optimizing campaign performance and ROI.",
-    // link: "https://microsoft.com",
+      "Tracks and attributes inbound calls to specific marketing channels, boosting campaign performance and ROI.",
   },
 ];

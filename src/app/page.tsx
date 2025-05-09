@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <HeroHighlightDemo />
-      <div className=" flex items-center justify-between p-2 sm:p-8">
+      <div className=" flex items-center justify-between p-2 ">
         <Logo />
         <div className="z-10">{/* <ModeToggle /> */}</div>
       </div>
       {/* Main Content */}
-      <main className="relative  flex-grow text-gray-700   max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-10 ">
+      <main className="relative  flex-grow text-gray-700   max-w-7xl mx-auto text-center px-4 sm:px-6 py-8 sm:py-2 ">
         <div className="mb-6">
           <ComingSoon />
         </div>
@@ -26,9 +26,8 @@ export default function Home() {
             <p
               className={` text-lg sm:text-xl text-gray-600  max-w-3xl mx-auto leading-relaxed`}
             >
-              Boost your business with call recording, affordable numbers, DNI,
-              real-time analytics, and smart call flows. Call tracking’s future
-              is near.
+              Drive growth with smart call recording, dynamic tracking, and
+              real-time insights.
             </p>
           </div>
           <div>
